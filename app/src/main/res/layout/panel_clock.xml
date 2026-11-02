@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <!-- TIME -->
+    <TextView
+        android:id="@+id/clockTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="8:45 PM"
+        android:textSize="48sp"
+        android:textColor="#4DA3FF"
+        android:textStyle="bold" />
+
+    <!-- DATE -->
+    <TextView
+        android:id="@+id/clockDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tuesday, April 16"
+        android:textSize="20sp"
+        android:textColor="#FFFFFF"
+        android:paddingTop="4dp" />
+
+    <!-- SUNRISE / SUNSET ROW -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:paddingTop="16dp"
+        android:paddingBottom="8dp">
+
+        <!-- Sunrise icon -->
+        <ImageView
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:src="@drawable/ic_sunrise"
+            android:contentDescription="Sunrise" />
+
+        <!-- Sunrise time -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="6:08 AM"
+            android:textColor="#FFFFFF"
+            android:paddingLeft="8dp"
+            android:textSize="16sp" />
+
+        <!-- Spacer -->
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1" />
+
+        <!-- Sunset time -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="7:55 PM"
+            android:textColor="#FFFFFF"
+            android:paddingRight="8dp"
+            android:textSize="16sp" />
+
+        <!-- Sunset icon -->
+        <ImageView
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:src="@drawable/ic_sunset"
+            android:contentDescription="Sunset" />
+
+    </LinearLayout>
+
+    <!-- DAYLIGHT ARC -->
+    <View
+        android:id="@+id/daylightArc"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:paddingTop="8dp" />
+
+    <!-- DAYLIGHT TEXT -->
+    <TextView
+        android:id="@+id/daylightText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Daylight: 13h 47m"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:paddingTop="8dp" />
+
+</LinearLayout>
