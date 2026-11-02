@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="128dp"
+    android:height="128dp"
+    android:viewportWidth="128"
+    android:viewportHeight="128">
+
+    <!-- Outer neon ring -->
+    <path
+        android:pathData="M64,4 A60,60 0 1,1 63.9,4"
+        android:strokeColor="#00FFFF"
+        android:strokeWidth="6"
+        android:fillColor="@android:color/transparent"
+        android:strokeAlpha="0.9" />
+
+    <!-- Inner dark circle -->
+    <path
+        android:pathData="M64,12 A52,52 0 1,1 63.9,12"
+        android:fillColor="#0A0A0F" />
+
+    <!-- SONIX 'S' symbol -->
+    <path
+        android:pathData="M40,48 C40,32 88,32 88,48 C88,60 64,60 64,72 C64,88 40,88 40,72"
+        android:strokeColor="#00FFFF"
+        android:strokeWidth="6"
+        android:strokeAlpha="0.85"
+        android:fillColor="@android:color/transparent"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round" />
+
+</vector>
