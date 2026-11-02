@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp"
+    android:background="@color/sonix_background">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- TITLE -->
+        <TextView
+            android:id="@+id/wallpaperThemesTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Wallpaper & Themes"
+            android:textColor="#FFFFFF"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+        <!-- WALLPAPER PREVIEW -->
+        <ImageView
+            android:id="@+id/wallpaperPreview"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:layout_marginTop="24dp"
+            android:scaleType="centerCrop"
+            android:background="#222222"
+            android:contentDescription="Wallpaper Preview" />
+
+        <!-- CHANGE WALLPAPER BUTTON -->
+        <TextView
+            android:id="@+id/changeWallpaperButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Change Wallpaper"
+            android:textColor="#4DA3FF"
+            android:textSize="20sp"
+            android:paddingTop="16dp"
+            android:paddingBottom="24dp" />
+
+        <!-- THEMES TITLE -->
+        <TextView
+            android:id="@+id/themesTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Themes"
+            android:textColor="#FFFFFF"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <!-- THEMES ROW -->
+        <LinearLayout
+            android:id="@+id/themesContainer"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="16dp">
+
+            <!-- THEME 1 -->
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <View
+                    android:id="@+id/themeDefault"
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:background="#4DA3FF" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Default"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp"
+                    android:paddingTop="8dp" />
+            </LinearLayout>
+
+            <!-- THEME 2 -->
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <View
+                    android:id="@+id/themeDark"
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:background="#000000" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Dark"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp"
+                    android:paddingTop="8dp" />
+            </LinearLayout>
+
+            <!-- THEME 3 -->
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <View
+                    android:id="@+id/themeNeon"
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:background="#00FFFF" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Neon"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp"
+                    android:paddingTop="8dp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>
