@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- MAIN BACKGROUND -->
+    <color name="sonix_background">#0A0A0A</color>
+
+    <!-- NEON BLUE (Primary Sonix Color) -->
+    <color name="sonix_neon">#4DA3FF</color>
+
+    <!-- DARKER NEON BLUE (Variants, shadows, glow depth) -->
+    <color name="sonix_neon_dark">#1E4F7A</color>
+
+    <!-- ACCENT COLOR (Used for highlights or secondary glow) -->
+    <color name="sonix_accent">#7BC9FF</color>
+
+    <!-- PRIMARY TEXT COLOR -->
+    <color name="sonix_text_primary">#FFFFFF</color>
+
+</resources>
