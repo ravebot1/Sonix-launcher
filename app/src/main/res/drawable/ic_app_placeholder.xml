@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="64dp"
+    android:height="64dp"
+    android:viewportWidth="64"
+    android:viewportHeight="64">
+
+    <!-- Background circle -->
+    <path
+        android:pathData="M32,2 A30,30 0 1,1 31.9,2"
+        android:fillColor="#0A0A0F" />
+
+    <!-- Neon border -->
+    <path
+        android:pathData="M32,2 A30,30 0 1,1 31.9,2"
+        android:strokeColor="#4DA3FF"
+        android:strokeWidth="3"
+        android:fillColor="@android:color/transparent" />
+
+    <!-- App square icon -->
+    <path
+        android:pathData="M20,20 L44,20 L44,44 L20,44 Z"
+        android:fillColor="#4DA3FF"
+        android:fillAlpha="0.25" />
+
+    <!-- App dot -->
+    <path
+        android:pathData="M32,28 A4,4 0 1,1 31.9,28"
+        android:fillColor="#4DA3FF"
+        android:fillAlpha="0.9" />
+
+</vector>
