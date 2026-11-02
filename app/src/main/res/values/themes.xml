@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- SONIX MAIN APP THEME -->
+    <style name="Theme.Sonix" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Background -->
+        <item name="android:windowBackground">@color/sonix_background</item>
+
+        <!-- Primary neon color -->
+        <item name="colorPrimary">@color/sonix_neon</item>
+        <item name="colorPrimaryVariant">@color/sonix_neon_dark</item>
+
+        <!-- Accent color -->
+        <item name="colorAccent">@color/sonix_accent</item>
+
+        <!-- Text colors -->
+        <item name="android:textColor">@color/sonix_text_primary</item>
+
+        <!-- Status bar (TV devices ignore but included for completeness) -->
+        <item name="android:statusBarColor">@color/sonix_background</item>
+
+        <!-- Use Material components -->
+        <item name="materialButtonStyle">@style/SonixButton</item>
+    </style>
+
+    <!-- BUTTON STYLE -->
+    <style name="SonixButton" parent="Widget.MaterialComponents.Button">
+        <item name="android:textColor">@color/sonix_text_primary</item>
+        <item name="backgroundTint">@color/sonix_neon</item>
+    </style>
+
+</resources>
