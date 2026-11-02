@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp"
+    android:background="@color/sonix_background">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- TITLE -->
+        <TextView
+            android:id="@+id/aboutTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="About Sonix"
+            android:textColor="#FFFFFF"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+        <!-- VERSION -->
+        <TextView
+            android:id="@+id/aboutVersion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Version 1.0 (Beta)"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:paddingTop="16dp" />
+
+        <!-- CREATOR -->
+        <TextView
+            android:id="@+id/aboutCreator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Created by Claudiu — London, UK"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:paddingTop="8dp" />
+
+        <!-- CONTACT -->
+        <TextView
+            android:id="@+id/aboutContact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Contact: ravebot@gmail.com"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:paddingTop="8dp" />
+
+        <!-- DESCRIPTION -->
+        <TextView
+            android:id="@+id/aboutDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sonix Launcher is designed for speed, clarity, and a clean neon TV experience."
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:paddingTop="16dp" />
+
+    </LinearLayout>
+
+</ScrollView> 
