@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp"
+    android:background="#101010">
+
+    <!-- LEFT MENU -->
+    <LinearLayout
+        android:id="@+id/settingsMenu"
+        android:orientation="vertical"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:padding="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/settingsContentArea"
+        app:layout_constraintHorizontal_weight="1">
+
+        <TextView
+            android:id="@+id/menuGeneral"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="General"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:padding="12dp" />
+
+        <TextView
+            android:id="@+id/menuDisplay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Display"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:padding="12dp" />
+
+        <TextView
+            android:id="@+id/menuClockWeather"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Clock & Weather"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:padding="12dp" />
+
+        <TextView
+            android:id="@+id/menuWallpaperThemes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Wallpaper & Themes"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:padding="12dp" />
+
+        <TextView
+            android:id="@+id/menuAboutSonix"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="About Sonix"
+            android:textColor="#4DA3FF"
+            android:textSize="20sp"
+            android:padding="12dp" />
+
+    </LinearLayout>
+
+    <!-- RIGHT CONTENT AREA -->
+    <LinearLayout
+        android:id="@+id/settingsContentArea"
+        android:orientation="vertical"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:padding="24dp"
+        app:layout_constraintStart_toEndOf="@id/settingsMenu"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_weight="2">
+
+        <!-- SONIX LOGO -->
+        <ImageView
+            android:id="@+id/settingsLogo"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@drawable/sonix_logo"
+            android:layout_gravity="center_horizontal"
+            android:paddingBottom="16dp" />
+
+        <!-- TITLE -->
+        <TextView
+            android:id="@+id/settingsTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="About Sonix"
+            android:textColor="#FFFFFF"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:paddingBottom="12dp" />
+
+        <!-- CONTENT -->
+        <TextView
+            android:id="@+id/settingsContent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:paddingTop="8dp" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
