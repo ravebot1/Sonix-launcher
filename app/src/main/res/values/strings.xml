@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- APP NAME -->
+    <string name="app_name">Sonix Launcher</string>
+
+    <!-- SETTINGS MENU -->
+    <string name="menu_general">General</string>
+    <string name="menu_display">Display</string>
+    <string name="menu_clock_weather">Clock & Weather</string>
+    <string name="menu_wallpaper_themes">Wallpaper & Themes</string>
+    <string name="menu_about_sonix">About Sonix</string>
+
+    <!-- SETTINGS CONTENT -->
+    <string name="about_title">About Sonix</string>
+    <string name="about_content">
+        Sonix Launcher\n
+        Version: 1.0 (Beta)\n
+        Created by: Claudiu\n
+        Contact: ravebot@gmail.com\n\n
+        Designed and built by Claudiu – London, UK
+    </string>
+
+    <!-- WEATHER -->
+    <string name="weather_feels_like">Feels like %1$s°</string>
+
+    <!-- CLOCK -->
+    <string name="daylight_duration">Daylight: %1$sh %2$sm</string>
+
+    <!-- SETTINGS BUTTON -->
+    <string name="settings_button">Settings</string>
+
+</resources>
