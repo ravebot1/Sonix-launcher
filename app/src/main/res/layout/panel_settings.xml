@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp"
+    android:background="@color/sonix_background">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- TITLE -->
+        <TextView
+            android:id="@+id/settingsTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Settings"
+            android:textColor="#FFFFFF"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+        <!-- GENERAL -->
+        <TextView
+            android:id="@+id/settingsGeneral"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="General"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:paddingTop="24dp"
+            android:paddingBottom="12dp" />
+
+        <!-- DISPLAY -->
+        <TextView
+            android:id="@+id/settingsDisplay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Display"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:paddingBottom="12dp" />
+
+        <!-- CLOCK & WEATHER -->
+        <TextView
+            android:id="@+id/settingsClockWeather"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Clock & Weather"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:paddingBottom="12dp" />
+
+        <!-- WALLPAPER & THEMES -->
+        <TextView
+            android:id="@+id/settingsWallpaperThemes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Wallpaper & Themes"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:paddingBottom="12dp" />
+
+        <!-- ABOUT -->
+        <TextView
+            android:id="@+id/settingsAbout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="About Sonix"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:paddingBottom="12dp" />
+
+    </LinearLayout>
+
+</ScrollView>
