@@ -1,55 +1,263 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
+<LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="16dp"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@drawable/home_wallpaper">
+    android:layout_height="wrap_content">
 
-    <!-- CLOCK PANEL (LEFT SIDE) -->
-    <FrameLayout
-        android:id="@+id/clockContainer"
-        android:layout_width="0dp"
+    <!-- TITLE -->
+    <TextView
+        android:id="@+id/weatherTitle"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:padding="24dp"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toTopOf="@+id/appRowContainer"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/weatherContainer"
-        app:layout_constraintHorizontal_weight="1" />
+        android:text="Weather"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:textStyle="bold" />
 
-    <!-- WEATHER PANEL (RIGHT SIDE) -->
-    <FrameLayout
-        android:id="@+id/weatherContainer"
-        android:layout_width="0dp"
+    <!-- LOCATION -->
+    <TextView
+        android:id="@+id/weatherLocation"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:padding="24dp"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toTopOf="@+id/appRowContainer"
-        app:layout_constraintStart_toEndOf="@+id/clockContainer"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_weight="1" />
+        android:text="London, UK"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:paddingTop="4dp" />
 
-    <!-- APP ROW (BOTTOM) -->
+    <!-- CURRENT WEATHER ROW -->
     <LinearLayout
-        android:id="@+id/appRowContainer"
+        android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="24dp"
-        android:orientation="horizontal"
-        android:gravity="center"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent">
+        android:paddingTop="16dp"
+        android:gravity="center_vertical">
 
-        <!-- SETTINGS BUTTON -->
         <ImageView
-            android:id="@+id/settingsButton"
+            android:id="@+id/weatherIcon"
             android:layout_width="48dp"
             android:layout_height="48dp"
-            android:src="@drawable/ic_settings"
-            android:contentDescription="Settings" />
+            android:src="@drawable/ic_weather_sun" />
+
+        <TextView
+            android:id="@+id/weatherTemp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="12°"
+            android:textColor="#FFFFFF"
+            android:textSize="36sp"
+            android:paddingLeft="12dp" />
+
+        <TextView
+            android:id="@+id/weatherCondition"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Clear"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:paddingLeft="12dp" />
+    </LinearLayout>
+
+    <!-- FEELS LIKE -->
+    <TextView
+        android:id="@+id/weatherFeelsLike"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Feels like 10°"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:paddingTop="8dp" />
+
+    <!-- HUMIDITY -->
+    <TextView
+        android:id="@+id/weatherHumidity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Humidity: 72%"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:paddingTop="4dp" />
+
+    <!-- WIND -->
+    <TextView
+        android:id="@+id/weatherWind"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Wind: 5 km/h"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:paddingTop="4dp" />
+
+    <!-- SUNRISE / SUNSET -->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="12dp"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:id="@+id/weatherSunriseIcon"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:src="@drawable/ic_sunrise" />
+
+        <TextView
+            android:id="@+id/weatherSunrise"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="07:12"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:paddingLeft="8dp" />
+
+        <ImageView
+            android:id="@+id/weatherSunsetIcon"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:src="@drawable/ic_sunset"
+            android:paddingLeft="24dp" />
+
+        <TextView
+            android:id="@+id/weatherSunset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="16:39"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:paddingLeft="8dp" />
+    </LinearLayout>
+
+    <!-- FORECAST ROW -->
+    <LinearLayout
+        android:id="@+id/forecastRow"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="20dp"
+        android:gravity="center_vertical">
+
+        <!-- DAY 1 -->
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/day1Icon"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:src="@drawable/ic_weather_sun" />
+
+            <TextView
+                android:id="@+id/day1Temp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="12°"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:paddingTop="4dp" />
+        </LinearLayout>
+
+        <!-- DAY 2 -->
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/day2Icon"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:src="@drawable/ic_weather_partlycloud" />
+
+            <TextView
+                android:id="@+id/day2Temp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="10°"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:paddingTop="4dp" />
+        </LinearLayout>
+
+        <!-- DAY 3 -->
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/day3Icon"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:src="@drawable/ic_weather_rain" />
+
+            <TextView
+                android:id="@+id/day3Temp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="8°"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:paddingTop="4dp" />
+        </LinearLayout>
+
+        <!-- DAY 4 -->
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/day4Icon"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:src="@drawable/ic_weather_cloud" />
+
+            <TextView
+                android:id="@+id/day4Temp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="9°"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:paddingTop="4dp" />
+        </LinearLayout>
+
+        <!-- DAY 5 -->
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/day5Icon"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:src="@drawable/ic_weather_suncloud" />
+
+            <TextView
+                android:id="@+id/day5Temp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="11°"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:paddingTop="4dp" />
+        </LinearLayout>
 
     </LinearLayout>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>
